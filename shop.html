@@ -12,7 +12,13 @@
 	<title>Sendvic paneli - O nama | Panel House</title>
 
 	<!-- favicon -->
-	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="assets/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#000000">
 	<!-- google font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
@@ -96,8 +102,10 @@
 					<div class="search-bar">
 						<div class="search-bar-tablecell">
 							<h3>Pretraži panele:</h3>
-							<input type="text" placeholder="Ključna reč">
-							<button type="submit">Traži <i class="fas fa-search"></i></button>
+							<input type="text" id="link-box" placeholder="Ključna reč">
+							<button type="submit" id="search-button" value="Search"
+								onclick="window.location = document.getElementById('link-box').value;">Traži <i
+									class="fas fa-search"></i></button>
 						</div>
 					</div>
 				</div>
@@ -391,6 +399,16 @@
 		</div>
 	</div>
 	<!-- end copyright -->
+
+	<!-- cookie -->
+	<div class="cookie-container">
+		<p> Na ovom sajtu koristimo kolačiće kako bi smo vam pružili najbolje iskustvo tokom pretrage. Kako bi ste
+			saznali više o tome, pročitajte našu <a href="policy.html"><span class="red-text">politiku
+					privatnosti</span> &amp; <span class="orange-text">kolačića</span></a>. </p>
+		<button class="cookie-btn"> Slažem se </button>
+	</div>
+	<!-- end -->
+
 	<!-- jquery -->
 	<script src="assets/js/jquery-1.11.3.min.js"></script>
 	<!-- bootstrap -->
@@ -409,7 +427,8 @@
 	<script src="assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
-
+	<!-- Cookie js -->
+	<script src="assets/js/cookie.js"></script>
 </body>
 
 </html>

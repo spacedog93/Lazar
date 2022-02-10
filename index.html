@@ -102,8 +102,10 @@
 					<div class="search-bar">
 						<div class="search-bar-tablecell">
 							<h3>Pretraži panele:</h3>
-							<input type="text" placeholder="Ključna reč">
-							<button type="submit">Traži <i class="fas fa-search"></i></button>
+							<input type="text" id="link-box" placeholder="Ključna reč">
+							<button type="submit" id="search-button" value="Search"
+								onclick="window.location = document.getElementById('link-box').value;">Traži <i
+									class="fas fa-search"></i></button>
 						</div>
 					</div>
 				</div>
@@ -111,7 +113,6 @@
 		</div>
 	</div>
 	<!-- end -->
-
 	<!-- home page slider -->
 	<div class="homepage-slider">
 		<!-- single home slider -->
@@ -485,6 +486,15 @@
 	</div>
 	<!-- end copyright -->
 
+	<!-- cookie -->
+	<div class="cookie-container">
+		<p> Na ovom sajtu koristimo kolačiće kako bi smo vam pružili najbolje iskustvo tokom pretrage. Kako bi ste
+			saznali više o tome, pročitajte našu <a href="policy.html"><span class="red-text">politiku
+					privatnosti</span> &amp; <span class="orange-text">kolačića</span></a>. </p>
+		<button class="cookie-btn"> Slažem se </button>
+	</div>
+	<!-- end -->
+
 	<!-- jquery -->
 	<script src="assets/js/jquery-1.11.3.min.js"></script>
 	<!-- bootstrap -->
@@ -503,7 +513,8 @@
 	<script src="assets/js/sticker.js"></script>
 	<!-- main js -->
 	<script src="assets/js/main.js"></script>
-
+	<!-- Cookie js -->
+	<script src="assets/js/cookie.js"></script>
 </body>
 
 </html>

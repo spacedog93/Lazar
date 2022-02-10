@@ -173,7 +173,6 @@ $(document).ready(function(){
 		return false; 
 	}); 
 });
-
     jQuery(window).on("load",function(){
         jQuery(".loader").fadeOut(1000);
     });
