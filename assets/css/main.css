@@ -436,7 +436,9 @@ a.read-more-btn:hover {
 a.boxed-btn, a.bordered-btn, a.cart-btn {
   border-radius: 50px;
 }
-
+.section-title {
+  margin: 0 20px;
+}
 .section-title h3 {
   font-size: 40px;
   position: relative;
