@@ -437,25 +437,17 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
   border-radius: 50px;
 }
 .section-title {
-  margin: 0 20px;
+  margin: 0 auto;
+  max-width: 70%;
+  padding: 40px 0;
 }
 .section-title h2 {
   padding-bottom: 15px;
-}
-
-.section-title {
-  margin-bottom: 30px;
-}
-.text-about {
-  margin: 30px;
 }
 /*===========================
         shop style
 =============================
 */
-.text-shop {
-  margin: 40px 0 40px 0;
-}
 .text-colors {
   margin: 40px;
   text-align: center;
@@ -464,7 +456,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
   font-size: 45px;
 }
 .breadcrumb-bg {
-  background-image: url(../img/kontakt.hero.jpg);
+  background-image: url(../img/kontakt.hero.jpeg);
 }
 
 .breadcrumb-text p {
@@ -483,6 +475,7 @@ a.boxed-btn, a.bordered-btn, a.cart-btn {
 }
 .breadcrumb-text h1 a {
   color: #fff;
+  text-decoration: underline;
 }
 .breadcrumb-text h1 a:hover {
   color: #F28123;
@@ -836,6 +829,23 @@ a.mobile-show {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 7px;
+}
+
+#searchbar{
+  padding:15px;
+  border-radius: 20px;
+}
+.paneli{
+  display: block;    
+  text-decoration: none;
+} 
+#list li a{
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 20px;
+}
+#list li a:hover {
+  color: #F28123;
 }
 /*============================
 Back to TOP ARROW
@@ -1311,7 +1321,7 @@ a.mobile-show.search-bar-icon:hover {
 
 ----------------------------------------------------------------------------- */
 .hero-bg {
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(../img/hero-bg.jpeg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1418,15 +1428,15 @@ input[type="submit"] {
 }
 
 .homepage-bg-1 {
-  background-image: url(../img/hero-bg.jpg);
+  background-image: url(../img/hero-bg.jpeg);
 }
 
 .homepage-bg-2 {
-  background-image: url(../img/hero-bg2.jpg);
+  background-image: url(../img/hero-bg2.jpeg);
 }
 
 .homepage-bg-3 {
-  background-image: url(../img/hero-bg3.jpg);
+  background-image: url(../img/hero-bg3.jpeg);
 }
 
 .homepage-slider {
@@ -1614,7 +1624,7 @@ div.owl-controls, .owl-controls div {
 ----------------------------------------------------------------------------- */
 .shop-banner {
   position: relative;
-  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/panelcolors.jpg");
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/panelcolors.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1646,8 +1656,15 @@ div.owl-controls, .owl-controls div {
   margin-right: 10px;
   display: inline-block;
 }
+/*================================
+          about us banner
+========================*/
+.featured-text {
+  margin: 50px 0;
+}
 
-/* -----------------------------------------------------------------------------
+/* 
+-----------------------------------------------------------------------------
 
 # Contact Page Styles
 

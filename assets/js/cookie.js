@@ -16,6 +16,17 @@ setTimeout(() => {
 
 
 // search button
-		document.getElementById("search-button").addEventListener("click", function () {
-			window.location = document.getElementById('link-box').value;
-		});
+function search_panel () {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('paneli');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="block";                 
+        }
+    }
+}

@@ -69,7 +69,6 @@
 						<nav class="main-menu">
 							<ul>
 								<li class="current-list-item"><a href="#">Početna</a>
-
 								</li>
 								<li><a href="about.html">O nama</a></li>
 								<li><a href="shop.html">Proizvodi</a></li>
@@ -102,10 +101,19 @@
 					<div class="search-bar">
 						<div class="search-bar-tablecell">
 							<h3>Pretraži panele:</h3>
-							<input type="text" id="link-box" placeholder="Ključna reč">
-							<button type="submit" id="search-button" value="Search"
-								onclick="window.location = document.getElementById('link-box').value;">Traži <i
-									class="fas fa-search"></i></button>
+							<input type="text" id="searchbar" onkeyup="search_panel()" placeholder="Ključna reč">
+
+							<ul id='list'>
+								<li class="paneli"><a href="shop.html#krovniPanel">Krovni panel</a></li>
+								<li class="paneli"><a href="shop.html#zidniPanel">Zidni panel</a></li>
+								<li class="paneli"><a href="shop.html#srafoviPaneli">Srafovi za panele</a></li>
+								<li class="paneli"><a href="shop.html#viseBoja">Boje panela</a></li>
+								<li class="paneli"><a href="contact.html#brojTelefona">Broj telefona</a></li>
+								<li class="paneli"><a href="contact.html#brojTelefona">Adresa</a></li>
+								<li class="paneli"><a href="contact.html#googleMaps">Google maps</a></li>
+								<li class="paneli"><a href="contact.html#brojTelefona">Mejl</a></li>
+								<li class="paneli"><a href="about.html#oFirmi">O firmi</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -113,6 +121,7 @@
 		</div>
 	</div>
 	<!-- end -->
+
 	<!-- home page slider -->
 	<div class="homepage-slider">
 		<!-- single home slider -->
@@ -181,7 +190,6 @@
 	</div>
 	<!-- end -->
 
-	<!-- features list section -->
 	<div class="list-section pt-80 pb-80">
 		<div class="container">
 
@@ -241,7 +249,7 @@
 				<div class="col-lg-4 col-md-6 text-center">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="shop.html"><img src="assets/img/products/Sendvic panel proizvodi.jpg"
+							<a href="shop.html"><img src="assets/img/products/Sendvic panel proizvodi.jpeg"
 									alt="Zidni paneli"></a>
 						</div>
 						<h3>Zidni paneli</h3>
@@ -263,7 +271,7 @@
 				<div class="col-lg-4 col-md-6 offset-md-3 offset-lg-0 text-center">
 					<div class="single-product-item">
 						<div class="product-image">
-							<a href="shop.html"><img src="assets/img/products/srafovi proizvodi.jpg" alt="srafovi"></a>
+							<a href="shop.html"><img src="assets/img/products/srafovi proizvodi.jpeg" alt="srafovi"></a>
 						</div>
 						<h3>Šrafovi</h3>
 						<p class="proizvodiNasi"><span> za panele</span></p>
@@ -273,7 +281,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-8 offset-lg-2 text-center">
+			<div class="col-sm-9 col-md-12 text-center">
 				<div class="section-title">
 					<h3>Višegodišnje isustvo u prodaji panela</h3>
 					<p>Iskustvo u radu sa panelima i praćenjem projekata kao i brojnim zadovoljnim investitorima,
@@ -304,7 +312,7 @@
 								</span>
 							</div>
 						</div>
-						<img src="assets/img/products/Paneli proizvodi.jpg" alt="Sendvic Paneli">
+						<img src="assets/img/products/Paneli proizvodi.jpeg" alt="Sendvic Paneli">
 					</div>
 				</div>
 				<!--Content Column-->
