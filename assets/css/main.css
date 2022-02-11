@@ -839,6 +839,9 @@ a.mobile-show {
   display: block;    
   text-decoration: none;
 } 
+#list {
+  margin-left: -25px;
+}
 #list li a{
   text-decoration: none;
   color: #f1f1f1;
